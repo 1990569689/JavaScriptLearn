@@ -15,7 +15,6 @@ JavaScript 能够对页面中的所有事件做出反应
 通过类名找到 HTML 元素
 通过 id 查找 HTML 元素
 在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。
-
 本例查找 id="intro" 元素：
 */
 //找到div id

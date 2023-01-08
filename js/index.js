@@ -64,7 +64,6 @@ const name = "xaioming";
 
 /**
  * 下面的代码创建名为 cars 的数组：
-
 var cars=new Array();
 cars[0]="Saab";
 cars[1]="Volvo";
@@ -76,9 +75,6 @@ var cars=new Array("Saab","Volvo","BMW");
 
 实例
 var cars=["Saab","Volvo","BMW"];
- * 
- * 
- * 
  * 
  */
 /**
@@ -97,8 +93,6 @@ var person={firstname:"John", lastname:"Doe", id:5566};
 实例
 name=person.lastname;
 name=person["lastname"];
- * 
- * 
  */
 var person = {
     firstname: "John",
@@ -109,20 +103,15 @@ var person = {
         //在方法中，this 表示该方法所属的对象。
         return this.firstname
     },
-
-
 };
 console.log(person.firstname)
 /**
  * 当您声明新变量时，可以使用关键词 "new" 来声明其类型：
-
 var carname=new String;
 var x=      new Number;
 var y=      new Boolean;
 var cars=   new Array;
 var person= new Object;
- * 
- * 
  */
 //调用这个方法
 console.log(person.method())
@@ -131,13 +120,9 @@ function methodname(string) {
     return string
 }
 //方法的表示
-
-
 /*
 面向对象语言中 this 表示当前对象的一个引用。
-
 但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
-
 在方法中，this 表示该方法所属的对象。
 如果单独使用，this 表示全局对象。
 在函数中，this 表示全局对象。
@@ -146,7 +131,6 @@ function methodname(string) {
 类似 call() 和 apply() 方法可以将 this 引用到任何对象
 
 */
-
 var x = this;
 //指的是windows对象window 就是该全局对象为 [object Window]:
 function get() {
@@ -279,10 +263,9 @@ const 的本质: const 定义的变量并非常量，并非不可变，它定义
 */
 // 创建常量对象
 const carone = { type: "Fiat", model: "500", color: "white" };
-for(x in carone)
-{
-  txt=txt+carone[x]
-  console.log(txt)
+for (x in carone) {
+    txt = txt + carone[x]
+    console.log(txt)
 }
 // 修改属性:
 carone.color = "red";
@@ -304,7 +287,6 @@ cars = ["Toyota", "Volvo", "Audi"];    // 错误
 */
 /*
 JSON 格式在语法上与创建 JavaScript 对象代码是相同的。
-
 由于它们很相似，所以 JavaScript 程序可以很容易的将 JSON 数据转换为 JavaScript 对象
 JSON.parse()	用于将一个 JSON 字符串转换为 JavaScript 对象。
 JSON.stringify()	用于将 JavaScript 值转换为 JSON 字符串。
@@ -326,13 +308,8 @@ console.log(JSON.stringify(array))
 /*
 回调函数
 回调函数就是一个函数，它是在我们启动一个异步任务的时候就告诉它：等你完成了这个任务之后要干什么。这样一来主线程几乎不用关心异步任务的状态了，他自己会善始善终。
-
-
 这段程序中的 setTimeout 就是一个消耗时间较长（3 秒）的过程，它的第一个参数是个回调函数，第二个参数是毫秒数，这个函数执行之后会产生一个子线程，子线程会等待 3 秒，然后执行回调函数 "print"，在命令行输出 "RUNOOB!"。
-
 当然，JavaScript 语法十分友好，我们不必单独定义一个函数 print ，我们常常将上面的程序写成：
-
-实例
 setTimeout(function () {
     document.getElementById("demo").innerHTML="RUNOOB!";
 }, 3000);
@@ -353,27 +330,20 @@ document.getElementById("demo2").innerHTML="RUNOOB-2!";
 */
 /*
 我们使用 class 关键字来创建一个类，类体在一对大括号 {} 中，我们可以在大括号 {} 中定义类成员的位置，如方法或构造函数。
-
 每个类中包含了一个特殊的方法 constructor()，它是类的构造函数，这种方法用于创建和初始化一个由 class 创建的对象。
-
-创建一个类的语法格式如下：
 
 class ClassName {
   constructor() { ... }
 }
 定义好类后，我们就可以使用 new 关键字来创建对象：
 
-实例
 class Runoob {
   constructor(name, url) {
     this.name = name;
     this.url = url;
   }
 }
- 
-let site = new Runoob("菜鸟教程",  "https://www.runoob.com");
 
-尝试一下 »
 创建对象时会自动调用构造函数方法 constructor()。
 
 类表达式
@@ -496,15 +466,13 @@ function person(firstname,lastname,age,eyecolor)
     this.age=age;
     this.eyecolor=eyecolor;
 }
-
-尝试一下 »
 在JavaScript中，this通常指向的是我们正在执行的函数本身，或者是指向该函数所属的对象（运行时）
 */
 function dog(firstname, lastname, age) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.age = age;
-    this.change=change;
+    this.change = change;
     //指向对象的方法change
 
     function change(firstName) {
@@ -516,19 +484,15 @@ doing.change("小明");
 console.log(doing.eyecolor);
 
 var x;
-var txt="";
+var txt = "";
 const cartwo = { type: "Fiat", model: "500", color: "white" };
-for(x in cartwo)
-{
-  txt=txt+cartwo[x]
-  console.log(txt)
+for (x in cartwo) {
+    txt = txt + cartwo[x]
+    console.log(txt)
 }
 /*
 默认情况下，JavaScript 数字为十进制显示。
-
 但是你可以使用 toString() 方法 输出16进制、8进制、2进制。
-
-实例
 var myNumber=128;
 myNumber.toString(16);   // 返回 80
 myNumber.toString(8);    // 返回 200
@@ -569,4 +533,135 @@ txt.split("|");   // 使用竖线分隔
 \r	回车
 \t	tab
 \b	空格
+*/
+/*
+设置日期
+通过使用针对日期对象的方法，我们可以很容易地对日期进行操作。
+
+在下面的例子中，我们为日期对象设置了一个特定的日期 (2010 年 1 月 14 日)：
+
+var myDate=new Date();
+myDate.setFullYear(2010,0,14);
+在下面的例子中，我们将日期对象设置为 5 天后的日期：
+
+var myDate=new Date();
+myDate.setDate(myDate.getDate()+5);
+*/
+//输出日期
+var myDate = new Date();
+console.log(myDate)
+/*
+两个日期比较
+日期对象也可用于比较两个日期。
+
+下面的代码将当前日期与 2100 年 1 月 14 日做了比较：
+
+var x=new Date();
+x.setFullYear(2100,0,14);
+var today = new Date();
+
+if (x>today)
+{
+    alert("今天是2100年1月14日之前");
+}
+else
+{
+    alert("今天是2100年1月14日之后");
+}
+*/
+/*
+创建数组, 为其赋值：
+*/
+var mycars = new Array();
+mycars[0] = "Saab";
+mycars[1] = "Volvo";
+mycars[2] = "BMW";
+console.log(mycars);
+/*
+创建一个数组，有三种方法。
+
+下面的代码定义了一个名为 myCars的数组对象：
+
+1: 常规方式:
+
+var myCars=new Array();
+myCars[0]="Saab";      
+myCars[1]="Volvo";
+myCars[2]="BMW";
+2: 简洁方式:
+
+var myCars=new Array("Saab","Volvo","BMW");
+3: 字面:
+
+var myCars=["Saab","Volvo","BMW"];
+*/
+/*
+访问数组
+通过指定数组名以及索引号码，你可以访问某个特定的元素。
+以下实例可以访问myCars数组的第一个值：
+var name=myCars[0];
+以下实例修改了数组 myCars 的第一个元素:
+myCars[0]="Opel";
+所有的JavaScript变量都是对象。数组元素是对象。函数是对象。
+因此，你可以在数组中有不同的变量类型。
+你可以在一个数组中包含对象元素、函数、数组：
+myArray[0]=Date.now;
+myArray[1]=myFunction;
+myArray[2]=myCars;
+数组方法和属性
+使用数组对象预定义属性和方法：
+var x=myCars.length             // myCars 中元素的数量
+var y=myCars.indexOf("Volvo")   // "Volvo" 值的索引值
+合并两个数组 - concat()
+合并三个数组 - concat()
+用数组的元素组成字符串 - join()
+删除数组的最后一个元素 - pop()
+数组的末尾添加新的元素 - push()
+将一个数组中的元素的顺序反转排序 - reverse()
+删除数组的第一个元素 - shift()
+从一个数组中选择元素 - slice()
+数组排序（按字母顺序升序）- sort()
+数字排序（按数字顺序升序）- sort()
+数字排序（按数字顺序降序）- sort()
+在数组的第2位置添加一个元素 - splice()
+转换数组到字符串 -toString()
+在数组的开头添加新元素 - unshift()
+*/
+/*
+Boolean 对象代表两个值:"true" 或者 "false"
+下面的代码定义了一个名为 myBoolean 的布尔对象：
+var myBoolean=new Boolean();
+如果布尔对象无初始值或者其值为:
+0
+-0
+null
+""
+false
+undefined
+NaN
+那么对象的值为 false。否则，其值为 true（即使当变量值为字符串 "false" 时）！
+*/
+/*
+round()
+如何使用 round()。
+
+random()
+如何使用 random() 来返回 0 到 1 之间的随机数。
+
+max()
+如何使用 max() 来返回两个给定的数中的较大的数。（在 ECMASCript v3 之前，该方法只有两个参数。）
+
+min()
+如何使用 min() 来返回两个给定的数中的较小的数。（在 ECMASCript v3 之前，该方法只有两个参数。）
+除了可被 Math 对象访问的算数值以外，还有几个函数（方法）可以使用。
+
+下面的例子使用了 Math 对象的 round 方法对一个数进行四舍五入。
+下面的例子使用了 Math 对象的 random() 方法来返回一个介于 0 和 1 之间的随机数
+下面的例子使用了 Math 对象的 floor() 方法和 random() 来返回一个介于 0 和 11 之间的随机数
+*/
+/*
+exec() 方法检索字符串中的指定值。返回值是被找到的值。如果没有发现匹配，则返回 null。
+下面的示例是从字符串中搜索字符 "e" ：
+var patt1=new RegExp("e");
+document.write(patt1.exec("The best things in life are free"));
 */
