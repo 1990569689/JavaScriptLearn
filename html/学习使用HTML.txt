@@ -1,0 +1,232 @@
+html超文本标记语言有head和body组成
+对于中文网页需要使用 <meta charset="utf-8"> 声明编码，否则会出现乱码。
+有些浏览器(如 360 浏览器)会设置 GBK 为默认编码，则你需要设置为 <meta charset="gbk">。
+<h1>这是标题 1</h1>
+<h2>这是标题 2</h2>
+<h3>这是标题 3</h3>
+<h4>这是标题 4</h4>
+<h5>这是标题 5</h5>
+<h6>这是标题 6</h6>
+显示效果依次缩小
+HTML 段落是通过标签 <p> 来定义的。
+<p>这是一个段落。</p>
+HTML 链接是通过标签 <a> 来定义的。
+<a href="https://www.runoob.com">这是一个链接</a>
+HTML 图像是通过标签 <img> 来定义的.
+<img decoding="async" src="/images/logo.png" width="258" height="39" />
+<br>	换行
+<hr> 标签在 HTML 页面中创建水平线。
+hr 元素可用于分隔内容。
+<p>这是一个段落。</p>
+<hr>
+<p>这是一个段落。</p>
+<hr>
+<p>这是一个段落。</p>
+可以将注释插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。浏览器会忽略注释，也不会显示它们。
+
+注释写法如下:
+<!-- 这是一个注释 -->
+
+HTML 使用标签 <b>("bold") 与 <i>("italic") 对输出的文本进行格式, 如：粗体 or 斜体
+这些HTML标签被称为格式化标签（请查看底部完整标签参考手册）。
+通常标签 <strong> 替换加粗标签 <b> 来使用, <em> 替换 <i>标签使用。
+然而，这些标签的含义是不同的：
+<b> 与<i> 定义粗体或斜体文本。
+<strong> 或者 <em>意味着你要呈现的文本是重要的，所以要突出显示。现今所有主要浏览器都能渲染各种效果的字体。不过，未来浏览器可能会支持更好的渲染效果。
+
+HTML 文本格式化标签
+标签	描述
+<b>	定义粗体文本
+<em>	定义着重文字
+<i>	定义斜体字
+<small>	定义小号字
+<strong>	定义加重语气
+<sub>	定义下标字
+<sup>	定义上标字
+<ins>	定义插入字
+<del>	定义删除字
+
+HTML "计算机输出" 标签
+标签	描述
+<code>	定义计算机代码
+<kbd>	定义键盘码
+<samp>	定义计算机代码样本
+<var>	定义变量
+<pre>	定义预格式文本
+
+HTML 引文, 引用, 及标签定义
+标签	描述
+<abbr>	定义缩写
+<address>	定义地址
+<bdo>	定义文字方向
+<blockquote>	定义长的引用
+<q>	定义短的引用语
+<cite>	定义引用、引证
+<dfn>	定义一个定义项目。
+<title> - 定义了HTML文档的标题
+
+
+使用 <title> 标签定义HTML文档的标题
+<base> - 定义了所有链接的URL
+使用 <base> 定义页面中所有链接默认的链接目标地址。
+<meta> - 提供了HTML文档的meta标记
+使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。
+HTML <head> 元素
+<head> 元素包含了所有的头部标签元素。在 <head>元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。
+可以添加在头部区域的元素标签为: <title>, <style>, <meta>, <link>, <script>, <noscript> 和 <base>。
+
+<meta> 标签- 使用实例
+为搜索引擎定义关键词:
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+为网页定义描述内容:
+<meta name="description" content="免费 Web & 编程 教程">
+定义网页作者:
+<meta name="author" content="Runoob">
+每30秒钟刷新当前页面:
+<meta http-equiv="refresh" content="30">
+
+HTML 图像- 图像标签（ <img>）和源属性（Src）
+在 HTML 中，图像由<img> 标签定义。
+<img> 是空标签，意思是说，它只包含属性，并且没有闭合标签。
+要在页面上显示图像，你需要使用源属性（src）。src 指 "source"。源属性的值是图像的 URL 地址。
+定义图像的语法是：
+<img src="url" alt="some_text">
+
+表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。
+数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+
+HTML 表格表头
+表格的表头使用 <th> 标签进行定义。
+大多数浏览器会把表头显示为粗体居中的文本：
+<span>用来组合文档中的行内元素， 内联元素(inline)
+
+以下实例创建了一个表单，包含两个输入框：
+<form action="">
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+
+密码字段
+密码字段通过标签 <input type="password"> 来定义:
+<form>
+Password: <input type="password" name="pwd">
+</form>
+注意：密码字段字符不会明文显示，而是以星号 * 或圆点 . 替代。
+
+单选按钮（Radio Buttons）
+<input type="radio"> 标签定义了表单的单选框选项:
+<form action="">
+<input type="radio" name="sex" value="male">男<br>
+<input type="radio" name="sex" value="female">女
+</form>
+
+<input type="checkbox"> 定义了复选框。
+<form>
+<input type="checkbox" name="vehicle" value="Bike">我喜欢自行车<br>
+<input type="checkbox" name="vehicle" value="Car">我喜欢小汽车
+</form>
+
+提交按钮(Submit)
+<input type="submit"> 定义了提交按钮。
+当用户单击确认按钮时，表单的内容会被传送到服务器。表单的动作属性 action 定义了服务端的文件名。
+<form name="input" action="html_form_action.php" method="get">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+
+下拉列表
+<form action="">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+</form>
+
+带边框的表单
+<form action="">
+<fieldset>
+<legend>Personal information:</legend>
+Name: <input type="text" size="30"><br>
+E-mail: <input type="text" size="30"><br>
+Date of birth: <input type="text" size="10">
+</fieldset>
+</form>
+
+iframe - 设置高度与宽度
+height 和 width 属性用来定义iframe标签的高度与宽度。
+属性默认以像素为单位, 但是你可以指定其按比例显示 (如："80%")。
+<iframe loading="lazy" src="demo_iframe.htm" width="200" height="200"></iframe>
+
+iframe - 移除边框
+frameborder 属性用于定义iframe表示是否显示边框。
+设置属性值为 "0" 移除iframe的边框:
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+
+语义元素
+HTML5 添加了很多语义元素如下所示：
+
+标签	描述
+<article>	定义页面独立的内容区域。
+<aside>	定义页面的侧边栏内容。
+<bdi>	允许您设置一段文本，使其脱离其父元素的文本方向设置。
+<command>	定义命令按钮，比如单选按钮、复选框或按钮
+<details>	用于描述文档或文档某个部分的细节
+<dialog>	定义对话框，比如提示框
+<summary>	标签包含 details 元素的标题
+<figure>	规定独立的流内容（图像、图表、照片、代码等等）。
+<figcaption>	定义 <figure> 元素的标题
+<footer>	定义 section 或 document 的页脚。
+<header>	定义了文档的头部区域
+<mark>	定义带有记号的文本。
+<meter>	定义度量衡。仅用于已知最大和最小值的度量。
+<nav>	定义导航链接的部分。
+<progress>	定义任何类型的任务的进度。
+<ruby>	定义 ruby 注释（中文注音或字符）。
+<rt>	定义字符（中文注音或字符）的解释或发音。
+<rp>	在 ruby 注释中使用，定义不支持 ruby 元素的浏览器所显示的内容。
+<section>	定义文档中的节（section、区段）。
+<time>	定义日期或时间。
+<wbr>	规定在文本中的何处适合添加换行符。
+
+HTML5 (视频)- 如何工作
+如需在 HTML5 中显示视频，您所有需要的是：
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>
+<video> 元素提供了 播放、暂停和音量控件来控制视频。
+同时 <video> 元素也提供了 width 和 height 属性控制视频的尺寸.如果设置的高度和宽度，所需的视频空间会在页面加载时保留。如果没有设置这些属性，浏览器不知道大小的视频，浏览器就不能再加载时保留特定的空间，页面就会根据原始视频的大小而改变。
+<video> 与</video> 标签之间插入的内容是提供给不支持 video 元素的浏览器显示的。
+<video> 元素支持多个 <source> 元素. <source> 元素可以链接不同的视频文件。浏览器将使用第一个可识别的格式：
+
+HTML5 Audio - 如何工作
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+HTML5 新的 Input 类型
+HTML5 拥有多个新的表单输入类型。这些新特性提供了更好的输入控制和验证。
+
+本章全面介绍这些新的输入类型：
+
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+注意:并不是所有的主流浏览器都支持新的input类型，不过您已经可以在所有主流的浏览器中使用它们了。即使不被支持，仍然可以显示为常规的文本域。
+
+Input 类型: color
+color 类型用在input字段主要用于选取颜色，如下所示：
+选择你喜欢的颜色: <input type="color" name="favcolor"
