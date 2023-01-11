@@ -1,0 +1,33 @@
+.head {
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    overflow: auto;
+
+
+}
+
+.line {
+    width: auto;
+    height: 0.5px;
+    background-color: darkgray;
+}
+
+.p-head {
+    width: auto;
+}
+
+
+
+body {
+    overflow: scroll;
+}
+
+footer {
+    height: 200px;
+    width: auto;
+    background-color: #ccc;
+}
