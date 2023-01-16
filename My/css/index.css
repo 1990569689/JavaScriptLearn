@@ -14,6 +14,7 @@
     /* iOS 4.1- */
 }
 
+
 body {
     background-image: url("../src/background.gif");
 }
@@ -29,6 +30,9 @@ body {
 .index {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.index_floor{
+    margin-top: 20px;
 }
 
 .content {
@@ -51,6 +55,18 @@ body {
     margin-left: 40px;
     margin-right: 30px;
     height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+.team_introduce {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 30px;
+    height: 400px;
     margin-top: 30px;
     border-radius: 10px;
     background-color: #fff;
@@ -81,6 +97,30 @@ body {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+
+}
+
+.introduce_team ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+.introduce_team ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.introduce_team ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    vertical-align: middle;
+
+}
+
+.introduce_team ul li p {
+    display: inline;
 
 }
 
@@ -136,6 +176,7 @@ body {
 }
 
 .introduce ul li p a {
+
     text-decoration: none;
     color: black;
 
@@ -143,7 +184,7 @@ body {
 }
 
 .dialog {
-    bottom: 50px;
+    bottom: 0px;
     right: 50px;
     position: fixed;
     z-index: 1;
@@ -182,6 +223,12 @@ body {
     margin-top: 20px;
     margin-bottom: 40px;
     vertical-align: middle;
+}
+
+.floor {
+    height: 500px;
+    margin: 30px;
+    background-color: rgba(99, 99, 99, 0.647);
 }
 
 .content ul li .xx p {
@@ -236,6 +283,7 @@ body {
     font-size: 20px;
     font-style: normal;
 }
+
 .team {
     border-radius: 10px;
     margin-left: 40px;
@@ -246,6 +294,7 @@ body {
 
 
 }
+
 .team h {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;

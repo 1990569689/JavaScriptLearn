@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <div class="dialog">
         <img src="./src/loading.gif">
     </div>
@@ -76,7 +77,13 @@
                         <p class="p">是一款免费的文字写作分享生活扩列平台，UI简洁非常适合学生党</p>
                     </div>
                 </li>
-                <li>汉化</li>
+                <li><img src="./src/rich.jpg">
+                    <div class="xx">
+                        <img src="./src/icon.jpg">
+                        <p><b>RichEdit</b><br>v1.0</br></p>
+                        <p class="p">一款GitHub开源的Android富文本编辑框，基于webview可以生成HTML上传至服务器</p>
+                    </div>
+                </li>
                 <li>汉化</li>
             </ul>
         </div>
@@ -135,7 +142,7 @@
                     <div class="item_top">
                         <h4>我的第一个博客</h4>
                         <p>
-                            HTML 列表HTML 支持有序、无序和定义列表: HTML 列表有序列表 第一个列表项 第二个列表项 第三个列表项无序列表 列表项 列表项 列表项在线实例无序列表本例演示无序
+                            牛逼 HTML 列表HTML 支持有序、无序和定义列表: HTML 列表有序列表 第一个列表项 第二个列表项 第三个列表项无序列表 列表项 列表项 列表项在线实例无序列表本例演示无序
                         </p>
                         <div class="item_img">
                             <ul>
@@ -155,15 +162,71 @@
                 </li>
             </ul>
         </div>
-        <div class="index">
+        <div class="index_floor">
             <div class="team">
                 <h>我的团队/My Team</h>
+
+            </div>
+            <div class="team_introduce">
+                <div class="person">
+                    <div class="person-icon">
+                        <img src="./src/tian.png">
+                    </div>
+                </div>
+                <div class="introduce_team">
+                    <ul>
+                        <li>
+                            <img src="./src/icon.jpg">
+                            <p>@D东ing</p></br>
+                            <p style="font-size: 12px;margin-left: 30px;">天伊联盟创始人,Android独立开发者,4年IT经验。</p></br>
+                            <a href="https://github.com/1990569689"
+                                style="margin-left: 30px;  text-decoration: none;color: black;font-size: 12px;">Github</a>
+
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./src/team_1.jpg">
+                            <p>@白昼</br>
+                            <p style="font-size: 12px;margin-left:30px;">后端程序员</p></br>
+                            <a href="https://github.com/2953656045"
+                                style="margin-left: 30px;  text-decoration: none;color: black;font-size: 12px;">Github</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="floor">
+                    
             </div>
         </div>
 
 
 
     </div>
+
+    <script src="https://l2dwidget.js.org/lib/L2Dwidget.min.js"></script>
+
+    <script type="text/javascript">
+        L2Dwidget.on('*', (name) => {
+            console.log('%c EVENT ' + '%c -> ' + name, 'background: #222; color: yellow', 'background: #fff; color: #000')
+        })
+            .init({
+                display: {
+                    // 居左
+                    "position": "left",
+                    // 宽度
+                    "width": 100,
+                    // 高度
+                    "height": 200,
+                    // 距左右
+                    "hOffset": 35,
+                    // 距下
+                    "vOffset": -20
+                }
+            });
+    </script>
+
 </body>
 
 </html>
