@@ -5,21 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
     <script src="./js/index.js">
     </script>
-    <div class="head">
-        <p style="font-size: 20px;height:auto;display:inline;width: 200px; line-height: 80px;">&#9776;</p>
-        <span style=" height:auto; margin-left: 10px; font-style: normal;">D东ing</span>
-        <div class="icon"><img src="./src/icon.jpg"></div>
-    </div>
-    <div class=" line">
-    </div>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D东ing</title>
 </head>
 
 <body>
+    <script>
 
+
+    </script>
+    <div class="nav">
+        <p onclick="getNavClose()" style="cursor:pointer;">X</p>
+        <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                天伊联盟
+            </li>
+            <li>
+                D东ing
+            </li>
+            <li>
+                留言
+            </li>
+            <li>
+                GitHub
+            </li>
+            <li>
+                加入我们
+            </li>
+        </ul>
+        <div class="menu-item">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <span>关于</span>
+                <i class="menu-item-last iconfont icon-chevron-down" style="color: #fff;"></i>
+            </label>
+            <div class="menu-content">
+                <span>我的编程历程</span>
+                <span>我的摄影历程</span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="head">
+        <p style="font-size: 20px;height:auto;display:inline;width: 200px; line-height: 80px;cursor:pointer;"
+            onclick="getNavOpen()">&#9776;</p>
+        <span style=" height:auto; margin-left: 10px; font-style: normal;">D东ing</span>
+        <div class="icon"><img src="./src/icon.jpg"></div>
+    </div>
+    <div class=" line">
+    </div>
     <div class="dialog">
         <img src="./src/loading.gif">
     </div>
@@ -194,10 +235,10 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
             <div class="floor">
-                    
+
             </div>
         </div>
 
