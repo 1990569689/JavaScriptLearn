@@ -375,7 +375,7 @@ footer {
     display: none;
     z-index: 1;
     margin-left: 0px;
-    width: 30%;
+    width: 40%;
     position: fixed;
     margin-top: 0px;
     height: 100%;
@@ -416,18 +416,43 @@ footer {
     color: aquamarine;
     font-size: 20px;
 }
-.menu-item{
 
+.menu-item {
+margin-top: 20px;
     margin-left: 20px;
+    cursor: pointer;
 }
-.menu-item span{
+
+.menu-item span {
+    cursor: pointer;
     color: #fff;
 }
-.menu-content{
+
+.menu-content {
     margin-left: 20px;
 }
+
 .menu-content span {
-    font-size: 10px;
     color: #fff;
     display: block;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+   display: none;
+   cursor: pointer;
+}
+
+
+
+input[type="checkbox"]:checked ~.menu-content{
+    /* 展开按钮选中后，折叠按钮显示 */
+    display: none;
+
+}
+
+input[type="checkbox"]:checked~label i{
+    /* 展开按钮选中后，展开按钮隐藏 */
+    display: none;
+    cursor: pointer;
 }
